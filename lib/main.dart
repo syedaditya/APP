@@ -1,3 +1,9 @@
+import 'package:chosmar_dokan/page/home_page.dart';
+import 'package:chosmar_dokan/page/login_page.dart';
+import 'package:chosmar_dokan/utils/routes.dart';
+import 'package:chosmar_dokan/widges/themes.dart';
+import 'package:google_fonts/google_fonts.dart';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -5,18 +11,22 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
+    // ignore: prefer_const_constructors
     return MaterialApp(
-      home: Material(
-        child: Center(
-          child: Container(
-            child: const Text('Welcome to my app'),
-          ),
-        ),
-      ),
+      // home: HomePage(),
+      themeMode: ThemeMode.light,
+      theme: MyTheme.lightTheme(context),
+      darkTheme: MyTheme.darkTheme(context),
+
+      debugShowCheckedModeBanner: false,
+      initialRoute: "/home",
+      routes: {
+        "/": (context) => LoginPage(),
+        MyRoutes.homeRoute: (context) => HomePage(),
+        MyRoutes.loginRoute: (context) => LoginPage(),
+      },
     );
   }
 }
