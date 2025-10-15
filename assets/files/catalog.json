@@ -1,0 +1,61 @@
+
+{
+    "products":[
+        {
+            "id": 1,
+            "name": "Spectacle",
+            "description": "square shape",
+            "price": 345,
+            "color": "red",
+            "image": "assets/images/chosma.jpeg"
+
+        },
+        {
+            "id": 2,
+            "name": "Square Spectacle",
+            "description": "square shape",
+            "price": 599,
+            "color": "red",
+            "image": "assets/images/chosma2.jpeg"
+
+        },
+        {
+            "id": 3,
+            "name": "Round Spectacle",
+            "description": "square shape",
+            "price": 395,
+            "color": "red",
+            "image": "assets/images/chosma3.jpg"
+
+        },
+        {
+            "id": 4,
+            "name": "Sunglass",
+            "description": "square shape",
+            "price": 356,
+            "color": "red",
+            "image": "assets/images/sunglass.jpeg"
+
+        },
+        {
+            "id": 5,
+            "name": "Round Sunglass",
+            "description": "square shape",
+            "price": 389,
+            "color": "red",
+            "image": "assets/images/sunglass2.jpeg"
+
+        },
+        {
+            "id": 6,
+            "name": "Rainbow glass",
+            "description": "square shape",
+            "price": 455,
+            "color": "red",
+            "image": "assets/images/rainbow.jpeg"
+
+        }
+        
+
+    ]
+}

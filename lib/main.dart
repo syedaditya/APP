@@ -1,3 +1,4 @@
+import 'package:chosmar_dokan/page/cart_page.dart';
 import 'package:chosmar_dokan/page/home_page.dart';
 import 'package:chosmar_dokan/page/login_page.dart';
 import 'package:chosmar_dokan/utils/routes.dart';
@@ -16,16 +17,17 @@ class MyApp extends StatelessWidget {
     // ignore: prefer_const_constructors
     return MaterialApp(
       // home: HomePage(),
-      themeMode: ThemeMode.light,
+      themeMode: ThemeMode.system,
       theme: MyTheme.lightTheme(context),
       darkTheme: MyTheme.darkTheme(context),
 
       debugShowCheckedModeBanner: false,
-      initialRoute: "/home",
+      initialRoute: MyRoutes.homeRoute,
       routes: {
         "/": (context) => LoginPage(),
         MyRoutes.homeRoute: (context) => HomePage(),
         MyRoutes.loginRoute: (context) => LoginPage(),
+        MyRoutes.cartRoute: (context) => CartPage(),
       },
     );
   }
