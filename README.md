@@ -1,6 +1,6 @@
 # chosmar_dokan
 
-A new Flutter project.
+An E-commerce platform to buy and sell spectacles from the nearest vendors at a justified price.
 
 ## Getting Started
 
